@@ -1,0 +1,15 @@
+P1 - Gestionnaire de films et series
+
+Projet fait par Labib Ben Nasr, Jeremie Garzon, Julien-Pier Gagnon et John Papaioannou.
+
+
+Schéma relationnel:
+film_serie(id_filmSerie, nom)
+casting(id_cast, nom, fonction)
+filmCasting(#id_filmSerie, #id_cast)
+genre(numero_genre, nomgenre)
+filmGenre(#id_filmSerie, #id_genre)
+utilisateur(id utilisateur, nom, prenom, email)
+jaime(#id_filmSerie, #id_utilisateur, coeur, rating)
+marquePage(#id_film, #id_utilisateur)
+fiche(id_fiche, #id_filmSerie, dateSortie, synopsis, langue)
